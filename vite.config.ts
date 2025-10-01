@@ -32,11 +32,11 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br.pem'))
-    },
-    host: 'app-dev.track.com.br',
+    // https: {
+    //   key: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br-key.pem')),
+    //   cert: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br.pem'))
+    // },
+    // host: 'app-dev.track.com.br',
     // hmr: {
     //   host: 'app-dev.wetrackr.com.br',
     //   protocol: "wss",
