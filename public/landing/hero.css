@@ -1,0 +1,131 @@
+[data-hero-header-anime] {
+    filter: blur(30px);
+    opacity: 0;
+}
+[data-hero-fade-anime] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+[data-hero-anime-opacity] {
+    opacity: 0;
+}
+[data-hero-blick] {
+    opacity: 0;
+}
+[data-deleyopacity] {
+    opacity: 0;
+}
+
+[data-hero-line-anime-height] {
+    height: 0;
+    overflow: hidden;
+}
+
+[data-hero-line-anime-width] {
+    width: 0;
+    overflow: hidden;
+}
+[data-hero-anime-in-scale] {
+    opacity: 0;
+    /*transform: translateY(350px);*/
+    transform: scale(1.03);
+}
+[anime-hero-image-fade] {
+    transform: translateY(30px);
+}
+
+[data-blur-anime] {
+    filter: blur(30px);
+    opacity: 0;
+}
+[data-blur-in-anime] {
+    filter: blur(30px);
+    opacity: 0;
+}
+[data-blur-in-anime-stager] {
+    filter: blur(30px);
+    opacity: 0;
+}
+
+[data-anime-opacity] {
+    opacity: 0;
+}
+[data-anime-opacity-now] {
+    opacity: 0;
+}
+
+[data-anime-opacity-stager] {
+    opacity: 0;
+}
+[data-anime-in-opacity] {
+    opacity: 0;
+}
+
+[data-line-anime-height] {
+    overflow: hidden;
+}
+
+[data-line-anime-width] {
+    width: 0;
+    overflow: hidden;
+}
+
+[data-line-anime-width-divider] {
+    width: 0;
+    overflow: hidden;
+}
+
+[data-split-line] {
+    opacity: 0;
+}
+[data-anime-fade] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+[data-anime-fade-lumi] {
+    opacity: 0;
+}
+
+[data-anime-fade-big] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+[data-anime-fade-fast] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+[data-anime-short-fade] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+[data-anime-in-fade] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+[data-anime-in-fade-big] {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+[data-anime-in-scale] {
+    opacity: 0;
+    transform: scale(0.9);
+}
+[data-anime-in-scale-small] {
+    opacity: 0;
+    transform: scale(0.75);
+}
+
+[data-image-scale] {
+    transform: scale(1.05);
+}
+
+[data-image-top-scale] {
+    transform: scale(1.05);
+}
+.line {
+    display: block;
+    overflow: hidden;
+}

@@ -1,0 +1,28 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+@use 'sass:map';
+
+@forward 'vuetify/settings' with (
+    // $body-font-family: 'Ubuntu, Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
+    // $color-pack: false,
+    // $utilities: false,
+    // $button-border-radius: 10px,
+    // $button-card-actions-padding: 0px 18px,
+    // $field-border-radius: 10px,
+    // Gera bug no input file
+    // $field-input-padding-top: 4px,
+    // $field-input-padding-bottom: 4px,
+    // $text-field-input-padding-start: 4px,
+    // $text-field-input-padding-end: 4px,
+    // $button-height: 42px,
+    // $table-background: #f7f7f7,
+    // $table-color: #6D7B90,
+    $sheet-color: #6D7B90,
+    // $expansion-panel-active-title-min-height: 48px,
+    // $expansion-panel-title-min-height: 32px
+);

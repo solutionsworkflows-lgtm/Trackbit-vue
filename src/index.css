@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-badge.success {
+    background-color: rgba(92, 184, 92, 0.1);
+    color: #5cb85c;
+}
+
+.status-badge.warning {
+    background-color: rgba(240, 173, 78, 0.1);
+    color: #f0ad4e;
+}
+
+.status-badge.error {
+    background-color: rgba(217, 83, 79, 0.1);
+    color: #d9534f;
+}
+/* Estilização da Scrollbar para navegadores WebKit */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+    background-color: transparent; /* Fundo transparente */
+}
+
+/* Fundo da Scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #1c223b75; /* cor do card */
+    border-radius: 10px;
+}
+
+/* Cor do "thumb" (o elemento que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background-color: #2d3748; /* Cor do texto secundário */
+    border-radius: 10px;
+    border: 2px solid #1c223b75; /* Borda para dar um visual mais fino */
+}
+
+/* Estilo ao passar o mouse sobre o "thumb" */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #667eea; /* Cor de destaque ao passar o mouse */
+}
