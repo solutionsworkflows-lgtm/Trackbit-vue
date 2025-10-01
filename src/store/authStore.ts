@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import Cookies from 'js-cookie'
 import { api } from '@/services/apiClient'
+import { apiLogin } from '@/services/apiLoginClient'
 import axios from 'axios';
 
 import { useAuth } from '@/composables/useAuth'
@@ -43,13 +44,13 @@ export const useAuthStore = defineStore('authStore', () => {
             logout()
 
             // Isso define o cookie 'XSRF-TOKEN' que será usado automaticamente
-            await axios.get('/sanctum/csrf-cookie',{
+            await apiLogin.get('/sanctum/csrf-cookie',{
                 withCredentials: true,
                 baseURL: import.meta.env.VITE_API_BASE_URL_DOMAIN
             })
 
             // Faz o login (cookie será setado)
-            const { data } = await api.post(
+            const { data } = await apiLogin.post(
                 '/login',
                 { email, password }
             )
