@@ -59,7 +59,7 @@ export function useFacebookAuth() {
                 throw new Error('Facebook SDK não está disponível.')
             }
 
-            FB.login(
+            await FB.login(
                 (response) => {
                     if (response.authResponse) {
                         const accessToken = response.authResponse.accessToken
@@ -75,10 +75,10 @@ export function useFacebookAuth() {
                 },
                 {
                     scope:
-                        'email,public_profile,business_management,ads_management,ads_read,pages_show_list,pages_read_engagement',
+                        'public_profile,business_management,ads_management,ads_read,pages_show_list,pages_read_engagement',
                     auth_type: 'rerequest', // força re-login se necessário
                     return_scopes: true,
-                    state: JSON.stringify({ config_id: import.meta.env.VITE_FACEBOOK_CONFIG_ID }),
+                    state: JSON.stringify({config_id: import.meta.env.VITE_FACEBOOK_CONFIG_ID}),
                 }
             )
         } catch (error) {
