@@ -16,6 +16,12 @@ api.interceptors.request.use(config => {
     const dashboardStore = useUsersDashboardStore()
     const code = dashboardStore.selectedDashboardCode || fallbackCode
 
+    const token = Cookies.get(import.meta.env.VITE_API_TOKEN_KEY);
+
+    if (token) {
+        request.headers[`X-${import.meta.env.VITE_API_TOKEN_KEY}`] = decodeURIComponent(token);
+    }
+
     if (code) {
         config.params = {
             ...(config.params || {}),
