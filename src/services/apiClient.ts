@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useAuthStore } from '@/store/authStore'
 import { useUsersDashboardStore } from '@/store/usersDashboardStore'
+import Cookies from 'js-cookie'
 
 export const api = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL || 'https://sua-api.com/api',
@@ -19,7 +20,7 @@ api.interceptors.request.use(config => {
     const token = Cookies.get(import.meta.env.VITE_API_TOKEN_KEY);
 
     if (token) {
-        request.headers[`X-${import.meta.env.VITE_API_TOKEN_KEY}`] = decodeURIComponent(token);
+        config.headers[`X-${import.meta.env.VITE_API_TOKEN_KEY}`] = decodeURIComponent(token);
     }
 
     if (code) {
