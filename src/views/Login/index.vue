@@ -3,9 +3,7 @@ import {ref, computed, onBeforeMount, onMounted} from 'vue'
 import { useRouter } from 'vue-router'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
-import api from '../../services/apiClient.ts'
 import { useToast } from 'vue-toastification'
-import axios from "axios";
 import { useAuthStore } from "@/store/authStore";
 const { setUser, setToken, logout, login, getUserLoggedData } = useAuthStore()
 import Cookies from 'js-cookie'

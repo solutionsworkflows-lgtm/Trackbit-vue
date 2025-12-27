@@ -32,6 +32,7 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
+      host: 'app-dev.wetrackr.com.br',
     // https: {
     //   key: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br-key.pem')),
     //   cert: fs.readFileSync(path.resolve(__dirname, 'app-dev.track.com.br.pem'))

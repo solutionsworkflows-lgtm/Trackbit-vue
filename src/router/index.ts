@@ -12,7 +12,7 @@ import Support from '../views/Support.vue'
 import DashboardManagement from '../views/DashboardManagement.vue'
 import KwaiDashboard from '../views/KwaiDashboard.vue'
 
-import Login from '../views/Auth/Login.vue'
+import Login from '../views/Login/index.vue'
 import Register from '../views/Auth/Register.vue'
 import Subscription from "../views/Subscription.vue";
 import InvoiceDetails from '../views/InvoiceDetails.vue'
@@ -23,7 +23,6 @@ import WebhookLogs from '../views/WebhookLogs.vue'
 
 import AdminDashboard from '../views/admin/Dashboard.vue'
 import AdminUsers from '../views/admin/Users.vue'
-// import AdminSubscriptions from '../views/admin/Subscriptions.vue'
 import AdminSettings from '../views/admin/Settings.vue'
 import Cookies from 'js-cookie'
 import PerformanceAnalysis from '../views/PerformanceAnalysis.vue'
@@ -215,7 +214,7 @@ const router = createRouter({
         },
         {path: '/auth/forgot-password', name: 'forgot', component: ForgotPassword},
         {path: '/reset-password', name: 'reset', component: ResetPassword},
-        {path: '/auth/login', name: 'login', component: Login},
+        {path: '/login', name: 'login', component: Login},
         {path: '/auth/register', name: 'register', component: Register},
     ]
 })
