@@ -236,9 +236,9 @@ router.beforeEach(async (to, from, next) => {
     const token = Cookies.get(import.meta.env.VITE_API_TOKEN_KEY)
     const user = localStorage.getItem('user')
 
-    if (!token || !user) {
-        return next('/auth/login')
-    }
+    // if (!token || !user) {
+    //     return next('/login')
+    // }
 
     // ✅ Usuário está autenticado
     if (to.name == 'dashboard' && !to.query.code) {
